@@ -417,4 +417,4 @@ setTimeout(() => {
   document.addEventListener("dblclick", () => {
     document.documentElement.requestFullscreen().catch(console.log);
   });
-}, 15000);
+}, 20000);
