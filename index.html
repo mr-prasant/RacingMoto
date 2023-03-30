@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>.:: Racing Moto</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/moves.css" />
+  </head>
+  <body>
+    <!-- background -->
+    <div class="main-bg">
+      <img src="./src/image/bg.jpg" alt="" />
+    </div>
+
+    <!-- game container -->
+    <div class="container">
+      <div class="track">
+        <img
+          class="tracks"
+          id="start-track"
+          src="./src/image/track-start.jpg"
+          alt=""
+        />
+        <img class="tracks" id="track1" src="./src/image/track.jpg" alt="" />
+        <img class="tracks" id="track2" src="./src/image/track.jpg" alt="" />
+      </div>
+
+      <div id="road" class="road">
+        <img class="cars" id="car1" src="./src/image/car1.png" alt="" />
+        <img class="cars" id="car2" src="./src/image/car2.png" alt="" />
+        <img class="cars" id="car3" src="./src/image/car3.png" alt="" />
+        <img id="car" src="./src/image/car-main.png" alt="" />
+      </div>
+    </div>
+
+    <!-- information -->
+    <div class="info" id="info">
+      SCORE
+      <div id="score">00</div>
+      <div id="lifes">-----</div>
+    </div>
+    <div class="highScoreContainer" id="highScoreContainer">
+      HIGH SCORE
+      <div id="highScore">00</div>
+    </div>
+    <div class="buttons">
+      <input id="startBtn" type="button" value="START RACE" />
+      <div id="black"></div>
+    </div>
+  </body>
+  <script src="./src/script.js"></script>
+</html>

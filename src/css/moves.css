@@ -1,0 +1,68 @@
+.removeBtn {
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.track1Anime {
+    animation-name: track;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.track2Anime {
+    animation-name: track;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.startTrackAnime {
+    animation-name: s-track;
+    animation-timing-function: linear;
+}
+
+.carRunningAnime {
+    animation-name: car-down;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.carCrash {
+    transform: scale(1.5);
+}
+
+.gameOverScore {
+    top: 1em;
+    margin-top: 2em;
+    margin-left: -46em;
+}
+
+/* all keyframes -------------------------------------------- */
+@keyframes car-down {
+    0% {
+        top: -10%;
+    }
+
+    100% {
+        top: 120%;
+    }
+}
+
+@keyframes s-track {
+    0% {
+        top: -35%;
+    }
+
+    100% {
+        top: 210%;
+    }
+}
+
+@keyframes track {
+    0% {
+        top: -145%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
