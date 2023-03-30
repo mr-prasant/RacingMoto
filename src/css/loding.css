@@ -38,7 +38,7 @@
     background: black;
     height: 100%;
     border-radius: 1em;
-    animation: loading 12s ease-in-out forwards;
+    animation: loading 15s ease-in-out forwards;
 }
 
 #titleMini {
@@ -52,7 +52,7 @@
 #title .loding img {
     width: 5vw;
     right: 0vw;
-    animation: carLoading 12s ease-in-out forwards;
+    animation: carLoading 15s ease-in-out forwards;
 }
 
 #loadingCircle {
