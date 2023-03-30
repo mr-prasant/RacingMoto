@@ -399,3 +399,22 @@ window.addEventListener("keydown", function (e) {
     }
   }
 });
+
+// loading... ---------------------------------------------------------
+
+setTimeout(() => {
+  let loadingPage = document.getElementById("lodingPage");
+  loadingPage.style.zIndex = -5;
+  loadingPage.style.opacity = 0;
+
+  let loadingMusic = new Audio();
+  loadingMusic.src = "./src/music/loading.mp3";
+  loadingMusic.play();
+
+  alert(
+    "Racing Moto:\n\tDouble click to full screen mode!\n\nPress OK to continue :)"
+  );
+  document.addEventListener("dblclick", () => {
+    document.documentElement.requestFullscreen().catch(console.log);
+  });
+}, 5000);
