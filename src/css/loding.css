@@ -1,0 +1,102 @@
+#lodingPage {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    color: white;
+    letter-spacing: 0.1em;
+    z-index: 5;
+
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+}
+
+#title img {
+    position: relative;
+    width: 70vw;
+    left: 15vw;
+    transition: all 0.5s;
+}
+
+#title .loding #loder {
+    background: rgba(210, 0, 0);
+    width: 95vw;
+    height: 1.2vh;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+#title .loding #loder #innerLoder {
+    background: black;
+    height: 100%;
+    border-radius: 1em;
+    animation: loading 4s ease-in-out forwards;
+}
+
+#titleMini {
+    position: absolute;
+    z-index: -3;
+    width: 20vw;
+    left: 1vw;
+    bottom: -8vh;
+}
+
+#title .loding img {
+    width: 5vw;
+    right: 0vw;
+    animation: carLoading 4s ease-in-out forwards;
+}
+
+#loadingCircle {
+    position: absolute;
+    width: 2.5vw;
+    bottom: 10vw;
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+
+    10% {
+        width: 10%;
+    }
+
+    30% {
+        width: 60%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes carLoading {
+    0% {
+        left: 2.5vw;
+    }
+
+    10% {
+        left: 9.5vw;
+    }
+
+    30% {
+        left: 57vw;
+    }
+
+    99% {
+        left: 95vw;
+    }
+
+    100% {
+        left: 100vw;
+    }
+}
