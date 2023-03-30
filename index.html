@@ -4,8 +4,24 @@
     <title>.:: Racing Moto</title>
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/moves.css" />
+    <link rel="stylesheet" href="./src/css/loding.css" />
   </head>
   <body>
+    <!-- loding page -->
+    <div id="lodingPage">
+      <img id="loadingCircle" src="./src/image/loading.gif" alt="" />
+      <div id="title">
+        <img src="./src/image/title.png" alt="" />
+        <div class="loding">
+          <img src="./src/image/lodingCar.gif" alt="" />
+          <div id="loder">
+            <div id="innerLoder"></div>
+          </div>
+        </div>
+        loading...
+      </div>
+    </div>
+
     <!-- background -->
     <div class="main-bg">
       <img src="./src/image/bg.jpg" alt="" />
@@ -46,6 +62,8 @@
       <input id="startBtn" type="button" value="START RACE" />
       <div id="black"></div>
     </div>
+
+    <img id="titleMini" src="./src/image/titleMini.png" alt="" />
   </body>
   <script src="./src/script.js"></script>
 </html>
